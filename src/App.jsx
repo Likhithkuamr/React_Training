@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import React from 'react'
+import "./App.css";
 
 function App() {
-  
-  // const Another_ele = (
-  //   <a href="">click here!</a>
-  // )
+  const name = "Kumar";
 
-  return 
-    //  Another_ele
-  
+  return (
+    <h1>Hi! I am {name}</h1>
+  );
 }
 
-export default App
+export default App;
