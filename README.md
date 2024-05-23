@@ -51,13 +51,16 @@ function App() {
 |<br>DAY3<br>
 using argument passed from the main.jsx file by the component
 ```jsx
+// declaring props
 function App(props) {
   return (
+    // props comes as a object and the key is name
     <h1>Hi! {props.name} wellcome</h1>
   );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // sending the name throught attribute
 <App name='Kumar' />
 )
 ```
