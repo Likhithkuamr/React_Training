@@ -46,3 +46,30 @@ function App() {
     <h1>Hi! I am {name}</h1>
   );
 }
+```
+|<br>
+|<br>DAY3<br>
+using argument passed from the main.jsx file by the component
+```jsx
+function App(props) {
+  return (
+    <h1>Hi! {props.name} wellcome</h1>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+<App name='Kumar' />
+)
+```
+another and esay way of using arguments
+```jsx
+function App({name, post}) {
+  return (
+    <h1>Hi! i am {name}, {post} </h1>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+<App name='Kumar' post='Student' />
+)
+```

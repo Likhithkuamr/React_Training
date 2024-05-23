@@ -2,11 +2,9 @@ import { useState } from "react";
 import React from 'react'
 import "./App.css";
 
-function App() {
-  const name = "Kumar";
-
+function App({name, post}) {
   return (
-    <h1>Hi! I am {name}</h1>
+    <h1>Hi! i am {name}, {post} </h1>
   );
 }
 
