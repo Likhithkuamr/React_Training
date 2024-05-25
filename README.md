@@ -76,3 +76,27 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 <App name='Kumar' post='Student' />
 )
 ```
+|<br>
+|<br>DAY4<br>
+it may seem to be simple but it uses the `useState` which play a major role in react.js<br>
+`useState` is a React hook that lets you add state management to functional components. It returns an array with two elements: the current state value (counter) and a function to update it (setCounter).
+```jsx
+// the useState is imported 
+import { useState } from "react";
+
+function App() {
+  // useState is decleared 
+  const [counter, setcounter] = useState(0);
+  return (
+     <>
+     <h1>The Number {counter}</h1>
+     <button onClick={()=>setcounter(counter + 1)}>ADD</button>
+     <button onClick={()=>setcounter(counter - 1)}>SUB</button>
+     </>
+  );
+}
+```
+
+
+
+
