@@ -96,7 +96,25 @@ function App() {
   );
 }
 ```
+|<br>
+|<br>DAY5<br>
+it's used in React state updates to ensure you get the most recent state value when updating.
+```jsx
+const addValue = () => {
+  // a callback function with an argument of the previous state.
+    setcounter((prevNum) => prevNum + 1);
+    setcounter((prevNum) => prevNum + 1);
+    setcounter((prevNum) => prevNum + 1);
+  }
 
+  return (
+     <div>
+     <h1>The Number {counter}</h1>
+     <button onClick={addValue}>ADD</button>
+     </div>
+    // totaly 3 is added when the ADD btn is clicked to the `counter`
+  );
+  ```
 
 
 
