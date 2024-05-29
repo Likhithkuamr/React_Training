@@ -178,4 +178,4 @@ export default App;
 ```
  |<br>
  |<br>DAY7<br>
- I made a currncey converter using a api in react
+Built a currency converter by integrating a API, managing rates with state hooks, and fetching latest rates with an effect hook.
