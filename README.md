@@ -176,5 +176,6 @@ function App() {
 }
 export default App;
 ```
-
-
+ |<br>
+ |<br>DAY7<br>
+ I made a currncey converter using a api in react
