@@ -179,3 +179,50 @@ export default App;
  |<br>
  |<br>DAY7<br>
 Built a currency converter by integrating a API, managing rates with state hooks, and fetching latest rates with an effect hook.
+ |<br>
+ |<br>DAY8<br>
+ Today i learnt about creating and using the `react-router-dom` is a library for React that provides routing capabilities, enabling navigation between different components in a single-page application. 🌐 It allows for dynamic URL management, making it easy to handle various routes and nested routes in your React app. 🚀
+ ```jsx
+//in this file all the component are imported  
+ import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import {Outlet} from 'react-router-dom'
+
+function Layout() {
+  return (
+    // the Navbar and Footer are unchanged and the <outlet/> is repalced by the router
+    <>
+        <Navbar/>
+        <Outlet/>
+        <Footer/>
+    </>
+  )
+}
+
+export default Layout
+```
+```jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import About from './components/About'
+import Home from './components/Home'
+import Layout from './components/Layout'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout/>}>
+      <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<About/>} />
+    </Route>
+  )
+)
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router}/>
+  </React.StrictMode>
+)
+```
