@@ -226,3 +226,32 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 )
 ```
+|<br>
+|<br>DAY9<br>
+Today i learnt about context api<br>
+In React, context provides a way to pass data through the component tree without having to pass props down manually at every level. It is useful for sharing global data like themes, user information, or settings across the application. 🌐✨
+```jsx
+// UserContext.js
+import React from "react";
+
+const UserContext = React.createContext();
+
+export default UserContext;
+```
+```jsx
+// UserContextProvider.js
+import React, { useState } from 'react';
+import UserContext from './UserContext';
+
+const UserContextProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
+
+export default UserContextProvider;
+```

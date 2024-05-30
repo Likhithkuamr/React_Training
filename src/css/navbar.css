@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navcont{
+    width: 100vw;
+    height: 100px;
+}
+
+.navbar{
+    width: 1000px;
+    height: 90px;
+    border: solid 2px #000;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.option ul{
+    list-style: none;
+    gap: 20px;
+}
